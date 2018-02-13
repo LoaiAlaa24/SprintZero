@@ -1,0 +1,28 @@
+ mkdir mySprintZero
+ cd mySprintZero/
+ git init
+ git add firstFile.txt
+ git add secondFile.txt
+ git add thirdFile.txt
+ git commit -m "Added the three sections" 
+ git rm secondFile.txt
+ git commit -m "Deleted 3.1"
+ git log
+ git revert c1dc1177e6006099537af2448a2732228fde34ed 
+ git remote add Origin https://github.com/LoaiAlaa24/SprintZero.git
+ git push --set-upstream Origin master
+ touch README.md
+ echo "Title:Sprint0 Description:Pages of the GIT book and some description Author:Loay Alaa with id:37-6424 Acknowledgments:book Chacon,Scott and Ben Straub.Pro Git, Apress,2014" >>README.md
+ git branch ReadMe
+ git checkout ReadMe
+ git add README.md
+ git commit -m "Readme file"
+ git checkout master
+ git merge ReadMe
+ 
+
+
+
+
+
+
